@@ -6,3 +6,7 @@ dataSources
 *.iml
 *.iws
 *.ipr
+
+# Generated files
+logs
+target
