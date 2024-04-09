@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.5</version>
+		<version>3.3.0-M3</version>
 
 		<relativePath />
 	</parent>
@@ -48,11 +48,34 @@
 		<module>web-api</module>
 	</modules>
 
+	<!-- External repositories -->
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<!-- External plugin repositories -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-plugin-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<!-- Project properties -->
 	<properties>
 
 		<!-- Logging -->
-		<log4j2.version>2.23.1</log4j2.version>
 		<lmax.version>4.0.0</lmax.version>
 
 		<!-- Compiler configuration -->
